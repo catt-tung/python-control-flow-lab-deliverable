@@ -9,8 +9,9 @@
 
 message = ''
 while message != 'quit':
-  message = input("Please enter a word or phrase: ")
-  print(f"What you entered is {len(message)} characters long")
-  if message == 'quit':
-    break
+  # if message == 'quit':
+  #   break
+  if message != 'quit': 
+    message = input("Please enter a word or phrase: ")
+    print(f"What you entered is {len(message)} characters long")
 
