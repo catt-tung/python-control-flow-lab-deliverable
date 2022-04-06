@@ -12,3 +12,23 @@
 #      etc.
 
 # Hint: The next number is found by adding the two numbers before it
+#create a function that will push values into a list
+# iterate over the list printing index and number
+
+fib = [0, 1]
+
+def fib_seq(list):
+  count = 0
+  n0 = 0
+  n1 = 1
+  while count < 49:
+    n = n0 + n1
+    list.append(n)
+    n0 = n1
+    n1 = n
+    count += 1
+
+fib_seq(fib)
+
+for n in range(51):
+  print(f"term: {n} / number {fib[n]}")
